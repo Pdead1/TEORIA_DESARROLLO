@@ -1,0 +1,12 @@
+postgres=# CREATE DATABASE proyecto_libros;
+CREATE DATABASE
+postgres=# \c proyecto_libros;
+Ahora está conectado a la base de datos «proyecto_libros» con el usuario «postgres».
+proyecto_libros=# CREATE TABLE libros (
+proyecto_libros(#     titulo VARCHAR(255) PRIMARY KEY,
+proyecto_libros(#     autor VARCHAR(255) NOT NULL,
+proyecto_libros(#     anio INT,
+proyecto_libros(#     genero VARCHAR(100),
+proyecto_libros(#     descripcion TEXT
+proyecto_libros(# );
+CREATE TABLE
