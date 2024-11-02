@@ -1,0 +1,131 @@
+:root {
+  --color-primario: #4CAF50;
+  --color-secundario: #FF5722;
+  --color-fondo: #F5F5F5;
+  --color-texto: #333;
+  --color-boton: #4CAF50;
+  --color-boton-hover: #45A049;
+  --color-borde: #ddd;
+  --fuente-titulo: 'Lobster', cursive;
+  --fuente-general: 'Roboto', sans-serif;
+}
+
+body {
+  font-family: var(--fuente-general);
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  margin: 0;
+  padding: 0;
+}
+
+.app-container {
+  width: 80%;
+  margin: 20px auto;
+  text-align: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  color: var(--color-primario);
+  font-family: var(--fuente-titulo);
+  font-size: 2.5em;
+}
+
+.book-form {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  margin-bottom: 20px;
+  font-family: var(--fuente-general);
+}
+
+.book-form input,
+.book-form textarea,
+.book-form button {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid var(--color-borde);
+  border-radius: 4px;
+  font-family: var(--fuente-general);
+}
+
+.book-form textarea {
+  grid-column: span 5;
+  resize: vertical;
+}
+
+.book-form button {
+  background-color: var(--color-boton);
+  color: white;
+  border: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.book-form button:hover {
+  background-color: var(--color-boton-hover);
+}
+
+.book-list {
+  margin-top: 20px;
+}
+
+.book-item {
+  border: 1px solid var(--color-borde);
+  background-color: #fff;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.book-item h3 {
+  color: var(--color-primario);
+  margin: 0;
+}
+
+.book-item button {
+  background-color: var(--color-secundario);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  margin-left: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.book-item button:hover {
+  background-color: #e64a19;
+}
+
+.book-details {
+  border: 1px solid var(--color-borde);
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 8px;
+}
+
+.book-details h3 {
+  color: var(--color-primario);
+}
+
+.book-details button {
+  background-color: var(--color-secundario);
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.book-details button:hover {
+  background-color: #e64a19;
+}
